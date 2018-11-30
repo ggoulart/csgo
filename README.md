@@ -86,14 +86,14 @@ maxplayers
 gamemode_armsrace.cfg          
 gamemode_casual.cfg            
 gamemode_competitive.cfg       
-gamemode_competitive2v2.cfg
-gamemode_cooperative.cfg
-gamemode_coopmission.cfg
-gamemode_custom.cfg
-gamemode_deathmatch.cfg
-gamemode_demolition.cfg    
-gamemode_teamdeathmatch.cfg
-gamemode_training.cfg
+gamemode_competitive2v2.cfg	
+gamemode_cooperative.cfg	
+gamemode_coopmission.cfg	
+gamemode_custom.cfg	
+gamemode_deathmatch.cfg		
+gamemode_demolition.cfg	   
+gamemode_teamdeathmatch.cfg	
+gamemode_training.cfg	
 
 
 | Mode                | game_type | game_mode |
@@ -104,7 +104,7 @@ gamemode_training.cfg
 | Demolition          | 1         | 1         |
 | Deathmatch          | 1         | 2         |
 
-rcon game_mode 1; 
-rcon game_type 0; 
-rcon exec gamemode_competitive;
-rcon mp_restartgame 1; 
+rcon game_mode 1;	
+rcon game_type 0;	
+rcon exec gamemode_competitive;		
+rcon mp_restartgame 1;		
