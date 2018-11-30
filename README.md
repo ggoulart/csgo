@@ -73,3 +73,38 @@ For example, by default, CSGO is installed in the root path `/csgo` within the d
 Passing `GOOGLE_METADATA=1` fetches default values for environment variables from Google Compute Engine's Project or Instance Metadata. Right now it defaults to project level, but you can simply override METADATA_URL to point to instance data.
 
 See https://cloud.google.com/compute/docs/storing-retrieving-metadata#querying.
+
+## Connect in server
+connect 10.73.21.144; password password
+rcon_password "yourRconPassword"; 
+
+### Simple Commands
+bot_add
+maxplayers
+
+## Game modes in the server
+gamemode_armsrace.cfg          
+gamemode_casual.cfg            
+gamemode_competitive.cfg       
+gamemode_competitive2v2.cfg
+gamemode_cooperative.cfg
+gamemode_coopmission.cfg
+gamemode_custom.cfg
+gamemode_deathmatch.cfg
+gamemode_demolition.cfg    
+gamemode_teamdeathmatch.cfg
+gamemode_training.cfg
+
+
+| Mode                | game_type | game_mode |
+|---------------------|-----------|-----------|
+| Classic Casual      | 0         | 0         |
+| Classic Competitive | 0         | 1         |
+| Arms Race           | 1         | 0         |
+| Demolition          | 1         | 1         |
+| Deathmatch          | 1         | 2         |
+
+rcon game_mode 1; 
+rcon game_type 0; 
+rcon exec gamemode_competitive;
+rcon mp_restartgame 1; 
