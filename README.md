@@ -75,11 +75,11 @@ Passing `GOOGLE_METADATA=1` fetches default values for environment variables fro
 See https://cloud.google.com/compute/docs/storing-retrieving-metadata#querying.
 
 ## Connect in server
-connect 10.73.21.144; password password
+connect 10.73.21.144; password password          
 rcon_password "yourRconPassword"; 
 
 ### Simple Commands
-bot_add
+bot_add          
 maxplayers
 
 ## Game modes in the server
